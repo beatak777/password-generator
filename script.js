@@ -88,9 +88,9 @@ const upperCasedCharacters = [
   'Z'
 ];
 
-const charOptions = []; // it is accessable at more sections
-const passowrdChars = [];
-let generatedPassword = '';
+let charOptions = []; // it is accessable at more sections
+// const passowrdChars = [];
+// let generatedPassword = "";
 let characterLength = 0;
 
 
@@ -101,6 +101,7 @@ let characterLength = 0;
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+  charOptions = [];
   //prompt for password length
   // at least 8 characters no more than 128
   // conditional to check that the number that was entered is in range
@@ -167,7 +168,12 @@ function generatePassword() {
   // special characters 
   // code should validate for each input and at least one character type should be selected
   // once prompts are answered then the password should be generated and displayed in an alert or written to the page
- 
+  let password = "";
+  for (let i = 0; i < characterLength; i++) {
+    const randomIndex = Math.random() * choiceArr.length;
+    password = password = choiceArr[randomIndex];
+  }
+  return password;
 }
 
 // Get references to the #generate element
@@ -175,10 +181,17 @@ const generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
-  const password = generatePassword();
+  const correctOptions = getPasswordOptions(); //leave it here to connect true and false section hopefully
   const passwordText = document.querySelector('#password');
 
-  passwordText.value = password;
+  if (correctOptions) {
+    const newPassword = generatePassword();
+    passwordText.value = newPassword;
+  } else {
+    passwordText.value = "";
+  }
+  
+  // hopefully this if is doing the thing that I am hoping
 }
 
 // Add event listener to generate button
