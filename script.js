@@ -147,10 +147,12 @@ function getRandom(arr) {
   // need a variable to hold the index that is being generated
   let password = "";
   for (let i = 0; i < characterLength; i++) {
-    const randomIndex = Math.random() * choiceArr.length;
-    password = password = choiceArr[randomIndex];
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    password += arr[randomIndex];
   }
   return password;
+
+  
   // for loop that loops selectedLenght number of times as many times as the user chose 
   // generate random number
   // that number is going to be the index for a character in the mega-array
@@ -173,7 +175,10 @@ function generatePassword() {
   // special characters 
   // code should validate for each input and at least one character type should be selected
   // once prompts are answered then the password should be generated and displayed in an alert or written to the page
- 
+if (getPasswordOptions()) {
+  return getRandom(charOptions);
+}
+return "";
 }
 
 // Get references to the #generate element
@@ -181,17 +186,10 @@ const generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
-  const correctOptions = getPasswordOptions(); //leave it here to connect true and false section hopefully
+  const password = generatePassword(); //leave it here to connect true and false section hopefully
   const passwordText = document.querySelector('#password');
 
-  if (correctOptions) {
-    const newPassword = generatePassword();
-    passwordText.value = newPassword;
-  } else {
-    passwordText.value = "";
-  }
-  
-  // hopefully this if is doing the thing that I am hoping
+  passwordText.value = password;
 }
 
 // Add event listener to generate button
