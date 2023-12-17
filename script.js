@@ -90,7 +90,9 @@ const upperCasedCharacters = [
 
 const charOptions = []; // it is accessable at more sections
 const passowrdChars = [];
-const generatedPassword = '';
+let generatedPassword = '';
+let characterLength = 0;
+
 
 // you can store the password as a string and concat each character or
 // as an array and push each character then join once you have enough
@@ -107,25 +109,42 @@ function getPasswordOptions() {
 
   // confirm which character sets to use
   // if the user answers false for all, either return out of the function or call function again
-  
+
   //once they sleect a character set:
-  
+
   // generate a random character for each selected character set
   // either push selected characters to a mega-array of all selected characters
   // or you can keep the array seperate   and generate a random number to select the array and another to select the index
+  characterLength = parseInt(prompt("How many characters do you want your password to be? (8 - 128 characters)")); //Nan
 
+  if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
+    alert("Character length has to be a number, 8 - 128 digits. Please try again.");
+    return false;
+
+  }
+
+  if (confirm("Would you like lowercase letters in your password?")) {
+    charOptions = charOptions.concat(lowerCasedCharacters);
+  }
+  if (confirm("Would you like uppercase letters in your password?")) {
+    charOptions = charOptions.concat(upperCasedCharacters);
+  }
+  if (confirm("Would you like special characters in your password?")) {
+    charOptions = charOptions.concat(specialCharacters);
+  }
+  if (confirm("Would you like numbers in your password?")) {
+    charOptions = charOptions.concat(numericCharacters);
+  }
+  return true;
 
   // once character sets are sleected move on to generating random characters
-
-  let passwordLength =
-
 }
 
 // Function for getting a random element from an array
 function getRandom(arr) {
   // need a variable to hold the password as its being generated
   // need a variable to hold the index that is being generated
-  
+
   // for loop that loops selectedLenght number of times as many times as the user chose 
   // generate random number
   // that number is going to be the index for a character in the mega-array
@@ -148,7 +167,7 @@ function generatePassword() {
   // special characters 
   // code should validate for each input and at least one character type should be selected
   // once prompts are answered then the password should be generated and displayed in an alert or written to the page
-
+ 
 }
 
 // Get references to the #generate element
