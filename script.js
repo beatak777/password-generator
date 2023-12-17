@@ -88,10 +88,12 @@ const upperCasedCharacters = [
   'Z'
 ];
 
-const charOptions = []; // it is accessable at more sections 
+const charOptions = []; // it is accessable at more sections
+const passowrdChars = [];
 const generatedPassword = '';
+
 // you can store the password as a string and concat each character or
-// as am array and push each character then join once you have enough
+// as an array and push each character then join once you have enough
 
 
 
