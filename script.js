@@ -105,6 +105,9 @@ function getPasswordOptions() {
 
   // confirm which character sets to use
   // if the user answers false for all, either return out of the function or call function again
+  
+  //once they sleect a character set:
+  
   // generate a random character for each selected character set
   // either push selected characters to a mega-array of all selected characters
   // or you can keep the array seperate   and generate a random number to select the array and another to select the index
