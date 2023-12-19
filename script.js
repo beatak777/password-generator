@@ -89,8 +89,6 @@ const upperCasedCharacters = [
 ];
 
 let charOptions = []; // it is accessable at more sections
-// const passowrdChars = [];
-// let generatedPassword = "";
 let characterLength = 0;
 
 
