@@ -21,7 +21,7 @@ The project is designed to create a secure password for the user. The task was r
 ##  <a name='DeployedPage'></a>Deployed Page
 - ![Deployed Page Screenshot]()
 
-- [Deployed Github Page](https://beatak777.github.io/)
+- [Deployed Github Page](https://beatak777.github.io/password-generator)
 
 ##  <a name='Comments'></a>Comments
 
@@ -37,11 +37,9 @@ No Installation necessary although it is not forbidden to do so. If you decide t
 ##   <a name='Credits'></a>Credits
 
 - Default files provided by [edX Bootcamp](https://www.edx.org/course/skills-bootcamp-in-front-end-web-development).
-
-
-
 - Code refactoring by [Bea Konya](https://github.com/beatak777).
-- Additional guidance received from []() Thank you for helping me debugging my code.
+- Additional guidance received from []() that helped me understand JavaScript on a bit deeper level.
+- Additional information was used from []() in order to solve this challenge.
 - Table of Contents was Created with the Visual Studio Code Extension 'Markdown TOC' available [here](https://marketplace.visualstudio.com/items?itemName=dumeng.markdown-toc).
 
 
