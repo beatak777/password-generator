@@ -1,4 +1,4 @@
-# password-generator
+# Password Generator
 
 ##  <a name='Description'></a>Description
 
@@ -32,7 +32,7 @@ No Installation necessary although it is not forbidden to do so. If you decide t
 3. Navigate to project directory
 2. Open index.html in your browser
 3. Answer the questions and you will find your generated password.
-4. Copy and paste and save it for future purposes.
+4. Copy and paste your password and save it for future purposes.
 
 ##   <a name='Credits'></a>Credits
 
