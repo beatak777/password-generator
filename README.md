@@ -34,7 +34,7 @@ No Installation necessary although it is not forbidden to do so. If you decide t
 
 - Default files provided by [edX Bootcamp](https://www.edx.org/course/skills-bootcamp-in-front-end-web-development).
 - Code refactoring by [Bea Konya](https://github.com/beatak777).
-- Additional guidance received from [Mdn Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN) that helped me understand JavaScript on a deeper level through the description of Nan, concat and for statements.
+- Additional guidance received from [Mdn Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/) that helped me understand JavaScript on a deeper level through the description of Nan, concat, math.floor and for statements.
 - Extra information was used from [Web Dev Simplief](https://www.youtube.com/watch?v=7L2RLBmEJmE) in order to solve this challenge.
 - Additional information was utilised from [Udemy JavaScript Course](https://www.udemy.com/share/101txa3@6pzxirXvN0duOQu1KxGSBF5Ij6A0SIUgputWKUMnu7eJh1w5GzhjGqCji83ZOjbe/) as I am a beginner.
 - Table of Contents was Created with the Visual Studio Code Extension 'Markdown TOC' available [here](https://marketplace.visualstudio.com/items?itemName=dumeng.markdown-toc).
